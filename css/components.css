@@ -1,0 +1,6 @@
+/* header */
+/* header-section__nav */
+.sr-only {
+  position: absolute;
+  clip: rect(0, 0 ,0, 0);
+}

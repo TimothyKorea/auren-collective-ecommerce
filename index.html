@@ -26,5 +26,37 @@
 
 <body>
     
+    <header class="header-section">
+        <div class="header-section__menu">
+            <button class="header-section__menu-btn" type="button">Menu</button>
+        </div>
+
+        <div class="header-section__brand">
+            <a href="index.html" class="header-section__brand-link">AUREN COLLECTIVE</a>
+        </div>
+
+        <div class="header-section__nav">
+            <div class="header-section__nav-search">
+                <button class="header-section__nav-search-btn" type="button">Search</button>
+
+                <label class="sr-only" for="search-for-product">Search products</label>
+                <input class="header-section__nav-search-input" placeholder="Search products..." type="text" id="search-for-product">
+            </div>
+
+            <nav class="header-section__nav-links" aria-label="header-navigation">
+                <ul class="header-section__nav-list">
+                    <li class="header-section__nav-item">
+                        <a class="header-section__nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="header-section__nav-item header-section__nav-item--cart">
+                        <a class="header-section__nav-link header-section__cart-link" href="cart.html" aria-label="cart">
+                            <img src="assets/icons/shopping-bag-filled-silhouette-svgrepo-com.svg" width="26px" height="26px">
+                            <span class="header-section__cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </body>
 </html>
