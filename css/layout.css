@@ -1,0 +1,19 @@
+/* header */
+.header-section{
+    position:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 1.5em;
+    left:0;
+    right:0;
+    background-color:rgba(255, 255, 255, 0.9);
+    height:90px;
+}
+
+.header-section__cart-link,
+.header-section__secondary-nav{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}

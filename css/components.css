@@ -1,6 +1,40 @@
-/* header */
-/* header-section__nav */
-.sr-only {
-  position: absolute;
-  clip: rect(0, 0 ,0, 0);
+.header-section{
+  border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-section__brand-link{
+  font-family:"Syne", sans-serif;
+  font-size:20px;
+  font-weight:500;
+  letter-spacing:0.02rem;
+  line-height:1.1;
+}
+
+.header-section__primary-nav,
+.header-section__nav-search,
+.header-section__wishlist-link{
+  display:none;
+}
+
+.header-section__cart-link{
+  background-color:rgb(24, 24, 27);
+  padding:.6em 1.25em;
+}
+
+.header-section__cart-count{
+  color: #9ca3af;
+  font-size:11px;
+}
+
+.header-section__cart-count::before{
+  content:"[ ";
+}
+
+.header-section__cart-count::after{
+  content:" ]";
+}
+
+.header-section__hamburger-menu{
+  background:inherit;
+  border:none;
 }
