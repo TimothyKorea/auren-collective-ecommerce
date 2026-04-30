@@ -37,15 +37,8 @@ h5{
     font-weight:600;
 }
 
-p,
-button,
-span,
-a,
-input,
-textarea,
-label,
-li{
-    font-family: 'Inter', sans-serif;
+button{
+    font-family:"JetBrains Mono", monospace;
 }
 
 input{
