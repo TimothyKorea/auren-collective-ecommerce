@@ -3,9 +3,9 @@
 }
 
 .header-section__brand-link,
-.mobile-brand-link{
+.mobile-menu__brand-link{
   font-family:"Syne", sans-serif;
-  font-size:18px;
+  font-size:20px;
   font-weight:500;
   letter-spacing:0.02rem;
   line-height:1.1;
@@ -13,7 +13,8 @@
 
 .header-section__primary-nav,
 .header-section__nav-search,
-.header-section__wishlist-link{
+.header-section__wishlist-link,
+.header-section__cart-text{
   display:none;
 }
 
@@ -24,7 +25,9 @@
 
 .header-section__cart-count{
   color: #9ca3af;
+  white-space:nowrap;
   font-size:11px;
+  margin-left:0.25rem;
 }
 
 .header-section__cart-count::before{
@@ -35,28 +38,39 @@
   content:" ]";
 }
 
-.header-section__hamburger-menu{
+.header-section__menu-toggle{
+  display:flex;
+  padding:0.5em;
+  justify-content:center;
+  align-items:center;
   background:inherit;
   border:none;
 }
 
-.mobile-top-row-wrapper{
+.mobile-menu__header{
   border-bottom:1px solid rgba(0, 0, 0, 0.1);
 }
 
-.mobile-primary-list__link{
-  font-size:1.5rem;
-  font-family: "Syne", sans-serif;
+.mobile-menu__close-menu{
+  border:none;
+  background:inherit;
 }
 
-.mobile-support,
-.mobile-order-track{
+.mobile-menu__link{
+  font-size:clamp(1.1rem, 1.3vw, 1.25rem);
+  font-family: "Syne", sans-serif;
+  font-weight:400;
+}
+
+.mobile-menu__support,
+.mobile-menu__order-track,
+.mobile-menu__wishlist{
   font-size:11px;
   font-family:"JetBrains Mono", monospace;
   text-transform: uppercase;
 }
 
-.mobile-nav-cta-label{
+.mobile-menu__cta-label{
   color:#9ca3af;
   margin:0 0 0.3em 0;
   font-family:"JetBrains Mono", monospace;
@@ -64,7 +78,7 @@
   text-transform:uppercase;
 }
 
-.mobile-nav-cta-link{
+.mobile-menu__cta-link{
   font-size:0.75rem;
   font-family:"JetBrains Mono", monospace;
 }

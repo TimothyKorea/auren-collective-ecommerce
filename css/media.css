@@ -1,0 +1,68 @@
+/* header */
+@media(min-width:800px){
+    .header-section__primary-nav{
+        display:flex;
+        justify-self:center;
+    }
+
+    .header-section__nav-list{
+        display:flex;
+        align-items:center;
+        gap:2rem;
+    }
+
+    .header-section__menu-toggle{
+        display:none;
+    }
+
+    .header-section__nav-search,
+    .header-section__wishlist-link{
+        display:inline-flex;
+    }
+
+    .header-section__wishlist-link{
+        padding:0.5em;
+    }
+
+    .header-section__search-icon{
+        border:none;
+        background:inherit;
+        display:flex;
+        align-items:center;
+    }
+
+    .header-section__visually-hidden{
+        position:absolute;
+        width:1px;
+        height:1px;
+        white-space:nowrap;
+        padding:0px;
+        margin:-1px;
+        overflow:hidden;
+        clip:rect(0,0,0,0);
+        border:0;
+    }
+
+    .header-section__search-input{
+        display:none;
+    }
+
+    .header-section__cart-link{
+        padding:.75em 1.5em;
+    }
+
+    .header-section__cart-text{
+        display:inline-flex;
+        color:#fff;
+        font-size:0.875rem;
+        font-family:"JetBrains Mono", monospace;
+        text-transform:uppercase;
+    }
+
+}
+
+@media(min-width:1024px){
+    .header-section__secondary-nav{
+        gap:1.5rem;
+    }
+}

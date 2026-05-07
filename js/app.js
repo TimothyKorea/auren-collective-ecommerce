@@ -7,7 +7,7 @@ mobileMenuBtn.addEventListener('click', () => {
 })
 
 
-const mobileMenuHidden = document.querySelector('.js-mobile-cancel-icon');
+const mobileMenuHidden = document.querySelector('.js-mobile-close-menu');
 
 mobileMenuHidden.addEventListener('click', () => {
     mobileMenu.classList.remove('is-active');
