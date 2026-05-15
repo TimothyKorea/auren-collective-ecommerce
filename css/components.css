@@ -6,24 +6,42 @@
 .mobile-menu__brand-link{
   font-family:"Syne", sans-serif;
   font-size:20px;
-  font-weight:500;
+  font-weight:700;
   letter-spacing:0.02rem;
   line-height:1.1;
 }
 
 .header-section__primary-nav,
-.header-section__nav-search,
 .header-section__wishlist-link,
-.header-section__cart-text{
+.header-section__cart-text,
+.header-section__brand-link-full,
+.mobile-menu__brand-link-full{
   display:none;
 }
 
+.header-section__search-icon{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0.0625em 0.375em;
+  border:none;
+  background:inherit;
+  color:#000;
+}
+
 .header-section__cart-link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
   background-color:rgb(24, 24, 27);
-  padding:.6em 1.25em;
+  padding:.6em 1em;
+  transition:background-color 0.2s ease;
 }
 
 .header-section__cart-count{
+  font-family:"JetBrains Mono", monospace;
   color: #9ca3af;
   white-space:nowrap;
   font-size:11px;
@@ -38,25 +56,40 @@
   content:" ]";
 }
 
-.header-section__menu-toggle{
+.header-section__menu-toggle,
+.mobile-menu__close-menu{
   display:flex;
   padding:0.5em;
   justify-content:center;
   align-items:center;
   background:inherit;
+  color:#000;
   border:none;
+  touch-action:manipulation;
+}
+
+.header-section__tooltip{
+  display:none;
 }
 
 .mobile-menu__header{
   border-bottom:1px solid rgba(0, 0, 0, 0.1);
 }
 
-.mobile-menu__close-menu{
-  border:none;
-  background:inherit;
+.mobile-menu__link{
+  padding:.75em 1.2em;
+  cursor:pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-menu__link:hover{
+  background-color:rgba(0,0,0,0.04);
+  border-radius:2px;
 }
 
 .mobile-menu__link{
+  display:block;
+  width:100%;
   font-size:clamp(1.1rem, 1.3vw, 1.25rem);
   font-family: "Syne", sans-serif;
   font-weight:400;
@@ -66,8 +99,20 @@
 .mobile-menu__order-track,
 .mobile-menu__wishlist{
   font-size:11px;
+  width:100%;
   font-family:"JetBrains Mono", monospace;
   text-transform: uppercase;
+  padding:1.2em 1.92em;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.mobile-menu__support:hover,
+.mobile-menu__order-track:hover,
+.mobile-menu__wishlist:hover{
+  background-color:rgba(0,0,0,0.04);
+  border-radius:2px;
 }
 
 .mobile-menu__cta-label{
@@ -96,4 +141,101 @@
 .menu-overlay.is-active{
   opacity:1;
   pointer-events:auto;
+}
+
+.header-section__nav-item{
+  position:relative;
+  font-family:"JetBrains Mono", monospace;
+  text-decoration:none;
+}
+
+.header-section__nav-item::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  left:0;
+  height:1px;
+  background:#A8A9AD;
+  bottom:-5px;
+  transform:scaleX(0);
+  transition:transform 0.25s ease;
+  transform-origin:left;
+}
+
+.header-section__nav-item:hover::after{
+  transform:scaleX(1);
+}
+
+.search-overlay__sr-only{
+  position:absolute;
+  margin:-1px;
+  width:1px;
+  height:1px;
+  clip:rect(0,0,0,0);
+  padding:0;
+  overflow:hidden;
+  border:0;
+}
+
+.search-overlay__title{
+  font-size:0.8rem;
+  letter-spacing:0.14rem;
+  opacity:0.7;
+  margin:0;
+}
+
+.search-overlay__close{
+  display:flex;
+  justify-content:flex-end;
+  color:#000;
+  align-items:center;
+  background:inherit;
+  border:none;
+  font-size:0.7rem;
+  padding-right:0;
+}
+
+.search-overlay__input{
+  font-family:"DM Sans", sans-serif;
+  background:transparent;
+  font-size:1rem;
+  width:100%;
+  border:none;
+  outline:none;
+  caret-color:#2b2b2b;
+}
+
+.search-overlay__input::placeholder{
+  font-size:1.1rem;
+  opacity:0.55;
+}
+
+.search-overlay__suggestions-label,
+.search-overlay__categories-label{
+  font-size:0.75rem;
+  font-weight:600;
+  letter-spacing:0.06rem;
+  margin:0;
+}
+
+.search-overlay__suggestions-link{
+  font-size:1rem;
+  font-weight:400;
+  border:1px solid rgba(24, 24, 27, 0.12);
+  background-color:#fff;
+  padding:.5em 1em;
+}
+
+.search-overlay__categories-link{
+  font-size:1rem;
+  font-weight:300;
+  opacity:0.75;
+}
+
+.search-overlay__categories-item{
+  border-bottom:1px solid #A8A9AD;
+}
+
+.search-overlay__categories-item:last-child{
+  border-bottom:none;
 }

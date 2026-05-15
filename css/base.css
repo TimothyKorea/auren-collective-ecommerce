@@ -37,10 +37,19 @@ h5{
     font-weight:600;
 }
 
-button{
+button,
+a{
     font-family:"JetBrains Mono", monospace;
 }
 
 input{
     outline:none;
 }
+
+
+
+
+
+
+
+
