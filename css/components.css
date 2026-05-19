@@ -5,6 +5,7 @@
 .header-section__brand-link,
 .mobile-menu__brand-link{
   font-family:"Syne", sans-serif;
+  text-transform:uppercase;
   font-size:20px;
   font-weight:700;
   letter-spacing:0.02rem;
@@ -132,10 +133,12 @@
   position:fixed;
   inset:0;
   background-color:rgba(84, 84, 84, 0.5);
-  backdrop-filter:blur(6px);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter: blur(12px);
   opacity:0;
   pointer-events:none;
   transition:opacity 0.3s ease;
+  z-index:900;
 }
 
 .menu-overlay.is-active{
@@ -238,4 +241,101 @@
 
 .search-overlay__categories-item:last-child{
   border-bottom:none;
+}
+
+.hero-section__season-tag,
+.hero-section__season-tag-volume,
+.hero-section__intent-label{
+  text-transform:uppercase;
+  position:relative;
+  margin:0;
+  color: #9ca3af;
+  letter-spacing:0.2em;
+  white-space:nowrap;
+  font-size:0.69rem;
+  font-family:"JetBrains Mono", monospace;
+}
+
+.hero-section__season-tag::after{
+  position:absolute;
+  top:50%;
+  content:"";
+  transform:translateY(-50%);
+  margin-left:2px;
+  width:10px;
+  height:0.5px;
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
+.hero-section__title{
+  position:relative;
+  margin-top:.5em;
+  margin-bottom:0px;
+  text-transform:uppercase;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.05;
+  font-weight:500;
+  color:rgb(24, 24, 27);
+}
+
+.hero-section__mid-dot{
+  color:rgb(160, 25, 55);
+}
+
+.hero-section__label-text{
+  font-size:1rem;
+  line-height:1.6;
+  color:rgb(24, 24, 27);
+  max-width:480px;
+  opacity:0.8;
+}
+
+.hero-section__primary-cta,
+.hero-section__secondary-cta{
+  width:fit-content;
+  font-size:0.75rem;
+  letter-spacing:0.2em;
+  text-transform:uppercase;
+  padding:1.05em 1.4em;
+  border:none;
+  background-color:rgb(24, 24, 27);
+  color:#fff;
+  cursor:pointer;
+}
+
+.hero-section__secondary-cta{
+  background-color:transparent;
+  border:1px solid rgb(24, 24, 27);
+  color:rgb(24, 24, 27);
+}
+
+.hero-section__img{
+  width:100%;
+  height:70vh;
+  object-fit:cover;
+}
+
+.hero-section__img-type{
+  font-family:"JetBrains Mono", monospace;
+  color:rgb(160, 25, 55);
+  font-size:10px;
+  font-weight:500;
+  text-transform:uppercase;
+  letter-spacing:0.13em;
+}
+
+.hero-section__img-text{
+  font-size:18px;
+  font-weight:600;
+  margin:0;
+  line-height:1.2;
+}
+
+.hero-section__img-season-tag,
+.hero-section__img-price{
+  font-size:12px;
+  font-weight:400;
+  Letter-spacing:0.02em;
+  font-family:"JetBrains Mono", monospace;
+  color:rgb(156, 163, 175);
 }

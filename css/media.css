@@ -1,5 +1,14 @@
 /* header */
 @media(max-width:380px){
+    .hero-section__title{
+        font-size:2.8rem;
+    }
+
+    .hero-section__season-tag-volume,
+    .hero-section__season-tag{
+        font-size:0.59rem;
+    }
+
     .header-section__brand-link{
         font-size:16px;
     }
@@ -51,6 +60,34 @@
     .header-section__search-icon:hover .header-section__tooltip,
     .header-section__cart-link:hover .header-section__tooltip{
         opacity:1;
+    }
+
+    .hero-section__title{
+        font-size:5.5rem;
+    }
+
+    .hero-section__primary-cta,
+    .hero-section__secondary-cta{
+        padding:1.5em 1.6em;
+        transition:background-color 0.3s ease;
+    }
+
+    .hero-section__primary-cta:hover{
+        background-color:rgb(160, 25, 55);
+    }
+
+    .hero-section__secondary-cta:hover{
+        background-color:rgb(24, 24, 27);
+        color:#fff;
+    }
+
+    .hero-section__btn-wrapper{
+        flex-direction:row;
+        gap:.95rem;
+    }
+
+    .hero-section__img{
+        height:100%;
     }
 }
 
@@ -129,10 +166,33 @@
     .search-overlay__content{
         overflow-y:hidden;
     }
+
+    .hero-section__title{
+        font-size:7rem;
+    }
+
 }
 
 @media(min-width:1024px){
     .header-section__secondary-nav{
         gap:1.5rem;
+    }
+
+     .hero-section__content-wrapper{
+        flex-direction:row;
+        justify-content:space-between;
+    }
+
+    .hero-section__content{
+        flex:0 0 auto;
+        gap:2rem;
+    }
+
+    .hero-section__img-wrapper{
+        flex:0 0 440px;       
+    }
+
+    .hero-section__img{
+        height:100%;
     }
 }
