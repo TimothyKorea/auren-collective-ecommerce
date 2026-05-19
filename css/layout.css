@@ -232,3 +232,40 @@ body.menu-open{
     display:flex;
     justify-content:space-between;
 }
+
+.marquee-section{
+    width:100%;
+    margin-top:3em;
+    padding:1em 1.2em;
+    overflow:hidden;
+    border-top:1px solid rgba(0, 0, 0, 0.1);
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+
+.marquee-content,
+.marquee-section{
+    display:flex;
+    align-items:center;
+    white-space:nowrap;
+}
+
+.marquee-content{
+    gap:1rem;
+}
+
+.marquee-track{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    animation:marquee-scroll 25s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  from{
+    transform:translateX(0);
+  }
+
+  to{
+    transform:translateX(-50%);
+  }
+}

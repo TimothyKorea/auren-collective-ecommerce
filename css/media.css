@@ -89,6 +89,15 @@
     .hero-section__img{
         height:100%;
     }
+
+    .marquee-label{
+        font-size:1.4rem;
+        font-weight:600;
+    }
+
+    .marquee-icon{
+        font-size:30px;
+    }
 }
 
 

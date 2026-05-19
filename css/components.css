@@ -339,3 +339,18 @@
   font-family:"JetBrains Mono", monospace;
   color:rgb(156, 163, 175);
 }
+
+.marquee-label{
+  font-size:0.85rem;
+  font-family:"Syne", sans-serif;
+  font-weight:600;
+  margin:0;
+  letter-spacing:0.13em;
+}
+
+.marquee-icon{
+  font-size:26px;
+  color:rgb(160, 25, 55);
+}
+
+
