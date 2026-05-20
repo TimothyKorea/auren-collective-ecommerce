@@ -69,7 +69,7 @@
     .hero-section__primary-cta,
     .hero-section__secondary-cta{
         padding:1.5em 1.6em;
-        transition:background-color 0.3s ease;
+        transition:background-color, color 0.3s ease;
     }
 
     .hero-section__primary-cta:hover{
@@ -87,7 +87,7 @@
     }
 
     .hero-section__img{
-        height:100%;
+        height:95vh;
     }
 
     .marquee-label{
@@ -97,6 +97,24 @@
 
     .marquee-icon{
         font-size:30px;
+    }
+
+    .categories__img-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .categories__img-wrapper:last-child{
+        grid-column:1 / -1;
+        height:50%;
+    }
+
+    .categories__img-wrapper{
+        aspect-ratio:4/6;
+    } 
+
+    .categories__img-label:hover{
+        background-color:rgb(24, 24, 27);
+        color:#fff;
     }
 }
 
@@ -178,6 +196,27 @@
 
     .hero-section__title{
         font-size:7rem;
+    }
+
+    .categories__header{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
+    }
+
+    .categories__img-wrapper:last-child{
+        grid-column:auto;
+        height:100%;
+    }
+
+    .categories__img-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .categories__img-wrapper{
+        aspect-ratio:3 / 3;
+        gap:1.2rem;
     }
 
 }

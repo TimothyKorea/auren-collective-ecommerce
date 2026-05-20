@@ -25,7 +25,8 @@ body.menu-open{
 
 .header-section__cart-link,
 .header-section__secondary-nav,
-.hero-section__primary-cta{
+.hero-section__primary-cta,
+.categories__link{
     display:flex;
     align-items:center;
     gap:0.5rem;
@@ -193,7 +194,8 @@ body.menu-open{
 }
 
 .hero-section__content,
-.hero-section__btn-wrapper{
+.hero-section__btn-wrapper,
+.categories__header{
     display:flex;
     flex-direction:column;
     gap:0.75rem;
@@ -235,6 +237,8 @@ body.menu-open{
 
 .marquee-section{
     width:100%;
+    max-width:1280px;
+    margin:0 auto;
     margin-top:3em;
     padding:1em 1.2em;
     overflow:hidden;
@@ -268,4 +272,36 @@ body.menu-open{
   to{
     transform:translateX(-50%);
   }
+}
+
+.categories{
+    max-width:1280px;
+    margin:0 auto;
+    padding-top:3.8em;
+    padding-inline:1.2em;
+}
+
+.categories__header{
+    margin-bottom:2.9em;
+}
+
+.categories__img-grid{
+    display:grid;
+    gap:clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.categories__img-wrapper{
+    display:grid;
+    place-items:center;
+}
+
+.categories__img-label{
+    display:flex;
+    justify-content:center;
+    position:absolute;
+    background-color:#fff;
+    bottom:clamp(16px, 3vw, 32px);
+    width:80%;
+    padding:1.5em;
+    transition:background-color 0.3s ease;
 }
