@@ -245,7 +245,9 @@
 
 .hero-section__season-tag,
 .hero-section__season-tag-volume,
-.hero-section__intent-label{
+.hero-section__intent-label,
+.best-sellers__pieces-num,
+.best-sellers__filter-title{
   text-transform:uppercase;
   position:relative;
   margin:0;
@@ -353,7 +355,8 @@
   color:rgb(160, 25, 55);
 }
 
-.categories__title{
+.categories__title,
+.best-sellers__title{
   margin:0;
   font-size: clamp(2rem, 4vw, 3.5rem);
   line-height:1.1;
@@ -397,3 +400,25 @@
   letter-spacing:-0.02em;
   line-height:1.1;
 } 
+
+.best-sellers{
+  background-color:rgb(244, 244, 245);
+}
+
+.best-sellers__selected-text{
+  color:rgb(24, 24, 27);
+  font-size:0.875rem;
+  font-weight:500;
+}
+
+.best-sellers__label{
+  border:none;
+  background:inherit;
+  cursor:pointer;
+  border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+
+.best-sellers__row{
+  border-bottom:1px solid rgba(0, 0, 0, 0.1);
+  border-top:1px solid rgba(0, 0, 0, 0.1);
+}
