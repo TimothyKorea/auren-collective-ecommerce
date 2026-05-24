@@ -8,6 +8,13 @@ function renderProducts(productArray, container) {
         <div class="product-card__container">
                 <div class="product-card__img-wrapper">
                     <img class="product-card__img" src="${product.img}" alt="${product.imageAlt}">
+                    <button type="button" class="product-card__cart-btn">
+                        <span class="product-card__cart-btn-icon"><svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" aria-hidden="true" fill="#e3e3e3"><path d="M444-144v-300H144v-72h300v-300h72v300h300v72H516v300h-72Z"/></svg></span>
+                        <span class="product-card__cart-btn-text">Add to Cart</span>
+                    </button>
+                    <button type="button" class="product-card__wishlist-add" aria-label="add to wishlist">
+                        <span class="product-card__wishlist-icon"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" height="16px" viewBox="0 -960 960 960" width="16px" fill="currentcolor"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg></span>
+                    </button>
                 </div>
 
                 <div class="product-card__info-wrapper">
@@ -25,7 +32,7 @@ function renderProducts(productArray, container) {
 
                     <span class="product-card__price">$${product.price / 100}</span>
                 </div>
-            </div>
+        </div>
         `
     })
 }
@@ -74,4 +81,29 @@ searchIcon.addEventListener('click', () => {
 
 searchOverlayClose.addEventListener('click', () => {
     searchOverlay.classList.remove('active');
+})
+
+const bestSellerLabelBtn = document.querySelector('.best-sellers__label');
+const bestSellerFilterLists = document.querySelector('.best-sellers__filter-lists');
+
+bestSellerLabelBtn.addEventListener('click', () => {
+    bestSellerFilterLists.classList.toggle('active');
+})
+
+const bestSellersFilterText = document.querySelector('.best-sellers__selected-text');
+const bestSellersFilterBtn = document.querySelectorAll('.best-sellers__filter-list-btn');
+
+bestSellersFilterBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+
+        bestSellersFilterBtn.forEach(button => {
+            button.classList.remove('active');
+        })
+
+        btn.classList.add('active');
+
+        bestSellersFilterText.textContent = btn.textContent;
+
+        bestSellerFilterLists.classList.remove('active');
+    })
 })
