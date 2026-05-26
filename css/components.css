@@ -290,7 +290,6 @@
   line-height:1.6;
   color:rgb(24, 24, 27);
   max-width:480px;
-  opacity:0.8;
 }
 
 .hero-section__primary-cta,
@@ -357,7 +356,8 @@
 }
 
 .categories__title,
-.best-sellers__title{
+.best-sellers__title,
+.editorial-section__title{
   margin:0;
   font-size: clamp(2rem, 4vw, 3.5rem);
   line-height:1.1;
@@ -481,4 +481,31 @@
 
 .product-card__cart-btn-text{
   font-size:0.8rem;
+}
+
+.editorial-section__title-accent{
+  color:rgb(160, 25, 55);
+}
+
+.editorial-section__supporting-text{
+  font-size:0.95rem;
+  font-weight:300;
+  max-width:45ch;
+  margin:0;
+  line-height:1.6;
+  opacity:0.85;
+}
+
+.editorial-section__brand-stats-num{
+  margin:0;
+  font-weight:600;
+  font-size:1.5rem;
+}
+
+.editorial-section__brand-stats-label{
+  font-size:0.65rem;
+  text-transform:uppercase;
+  letter-spacing:0.12em;
+  font-weight:300;
+  opacity:0.73;
 }
