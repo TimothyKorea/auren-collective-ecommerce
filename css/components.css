@@ -169,7 +169,8 @@
   transform:scaleX(1);
 }
 
-.search-overlay__sr-only{
+.search-overlay__sr-only,
+.sr-only{
   position:absolute;
   margin:-1px;
   width:1px;
@@ -248,7 +249,8 @@
 .hero-section__intent-label,
 .best-sellers__pieces-num,
 .best-sellers__filter-title,
-.product-card__seasonal-tag{
+.product-card__seasonal-tag,
+.promotional-section__archive-text{
   text-transform:uppercase;
   position:relative;
   margin:0;
@@ -357,7 +359,8 @@
 
 .categories__title,
 .best-sellers__title,
-.editorial-section__title{
+.editorial-section__title,
+.promotional-section__title{
   margin:0;
   font-size: clamp(2rem, 4vw, 3.5rem);
   line-height:1.1;
@@ -487,13 +490,14 @@
   color:rgb(160, 25, 55);
 }
 
-.editorial-section__supporting-text{
+.editorial-section__supporting-text,
+.promotional-section__text{
   font-size:0.95rem;
   font-weight:300;
   max-width:45ch;
   margin:0;
   line-height:1.6;
-  opacity:0.85;
+  opacity:0.9;
 }
 
 .editorial-section__brand-stats-num{
@@ -508,4 +512,46 @@
   letter-spacing:0.12em;
   font-weight:300;
   opacity:0.73;
+}
+
+.promotional-section__title,
+.promotional-section__text,
+.promotional-section__subscription-info{
+  color:#fff;
+}
+
+.promotional-section__input{
+  border:none;
+  display:block;
+  border-bottom:0.5px solid #3e3e3e;
+  font-size:1rem;
+  background:inherit;
+  outline:none;
+  color:#fff;
+}
+
+.promotional-section__input::placeholder{
+  color:#fff;
+  opacity:0.5;
+}
+
+.promotional-section__subscription-info{
+  font-size:.72rem;
+  margin-top:1rem;
+  margin-bottom:0;
+  color:#fff;
+  line-height:1.5;
+  letter-spacing: 0.03em;
+  opacity:0.5;
+}
+
+.promotional-section__subscribe-btn{
+  text-transform:uppercase;
+  color:rgb(24, 24, 27);
+  font-size:0.78rem;
+  border:none;
+  background-color:#fff;
+  cursor:pointer;
+  transition:background-color 0.2s ease;
+  letter-spacing:0.1em;
 }

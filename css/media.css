@@ -52,6 +52,12 @@
     .product-card__wishlist-add:hover{
         color:rgb(160, 25, 55);
     }
+
+    .promotional-section__subscribe-btn:hover{
+        background-color:rgb(24, 24, 27);
+        color:white;
+        border:1px solid #fff;
+    }
 }
 
 @media(min-width:638px){
@@ -131,6 +137,13 @@
         font-size:30px;
     }
 
+    .categories__title,
+    .best-sellers__title,
+    .editorial-section__title,
+    .promotional-section__title{
+        font-size: 2.8rem;
+    }
+
     .categories__img-grid{
         grid-template-columns:1fr 1fr;
     }
@@ -204,8 +217,32 @@
         transform:translateY(5.8rem);
     }
 
-    .editorial-section__supporting-text{
+    .editorial-section__supporting-text,
+    .promotional-section__text{
         font-size:1rem;
+    }
+
+    .promotional-section{
+        margin-top:6em;
+        padding-top:6em;
+        padding-bottom:6em;
+    }
+
+    .promotional-section__text{
+        max-width:40ch;
+    }
+
+    .promotional-section__subscribe-btn{
+        margin-top:2em;
+    }
+
+    .promotional-section__subscription-info{
+        margin-top:2em;
+    }
+
+    .promotional-section__subscription-block{
+        padding-top:2em;
+        padding-bottom:2em;
     }
 
 }
@@ -315,6 +352,15 @@
         gap:2rem;
     }
 
+    .promotional-section__dflex{
+        flex-direction:row;
+        justify-content:space-between;
+    }
+
+    .promotional-section__subscription-block{
+        align-self:center;
+    }
+
 }
 
 @media(min-width:1024px){
@@ -338,6 +384,18 @@
 
     .hero-section__img{
         height:100%;
+    }
+
+    .categories__title,
+    .best-sellers__title,
+    .editorial-section__title,
+    .promotional-section__title{
+        font-size: 4rem;
+    }
+
+    .editorial-section__supporting-text,
+    .promotional-section__text{
+        font-size:1.1rem;
     }
 
     .editorial-section__dflex{
