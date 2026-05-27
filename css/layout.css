@@ -142,7 +142,8 @@ body.menu-open{
 }
 
 .search-overlay__suggestions,
-.search-overlay__categories{
+.search-overlay__categories,
+.testimonials-section__content{
     display:flex;
     flex-direction:column;
     gap:1.25rem;
@@ -281,7 +282,8 @@ body.menu-open{
 .categories,
 .best-sellers,
 .editorial-section,
-.promotional-section{
+.promotional-section,
+.testimonials-section{
     max-width:1280px;
     margin:0 auto;
     padding:3.8em 1.2em;
@@ -314,7 +316,8 @@ body.menu-open{
 }
 
 .best-sellers,
-.best-sellers__row{
+.best-sellers__row,
+.testimonials-section__dflex{
     display:flex;
     flex-direction:column;
     gap:1.5rem;
@@ -489,7 +492,8 @@ body.menu-open{
     transform:translateY(2.5rem);
 }
 
-.promotional-section__dflex{
+.promotional-section__dflex,
+.testimonials-section{
     display:flex;
     flex-direction:column;
     gap:1.7rem;
@@ -525,4 +529,12 @@ body.menu-open{
     align-items:center;
     justify-content:center;
     height:48px;
+}
+
+.testimonials-section{
+    gap:2.2rem;
+}
+
+.testimonials-section__content{
+    gap:1.1rem;
 }

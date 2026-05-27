@@ -360,7 +360,8 @@
 .categories__title,
 .best-sellers__title,
 .editorial-section__title,
-.promotional-section__title{
+.promotional-section__title,
+.testimonials-section__title{
   margin:0;
   font-size: clamp(2rem, 4vw, 3.5rem);
   line-height:1.1;
@@ -554,4 +555,22 @@
   cursor:pointer;
   transition:background-color 0.2s ease;
   letter-spacing:0.1em;
+}
+
+.testimonials-section__content{
+  border-top:1px solid rgba(0, 0, 0, 0.1);
+  padding-top:1.38em;
+}
+
+.testimonials-section__text{
+  font-size:0.98rem;
+  line-height:1.5;
+  margin:0;
+  font-weight:400;
+}
+
+.testimonials-section__author{
+  font-size:0.78rem;
+  color:#9ca3af;
+  letter-spacing:0.02em;
 }

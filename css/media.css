@@ -140,7 +140,8 @@
     .categories__title,
     .best-sellers__title,
     .editorial-section__title,
-    .promotional-section__title{
+    .promotional-section__title,
+    .testimonials-section__title{
         font-size: 2.8rem;
     }
 
@@ -245,6 +246,10 @@
         padding-bottom:2em;
     }
 
+    .testimonials-section__text{
+        font-size:1.3rem;
+        font-weight:400;
+    }
 }
 
 
@@ -361,6 +366,16 @@
         align-self:center;
     }
 
+    .testimonials-section__dflex{
+        flex-direction:row;
+        justify-content:space-between;
+        gap:3rem;
+    }
+
+    .testimonials-section__text{
+        max-width:38ch;
+    }
+
 }
 
 @media(min-width:1024px){
@@ -389,7 +404,8 @@
     .categories__title,
     .best-sellers__title,
     .editorial-section__title,
-    .promotional-section__title{
+    .promotional-section__title,
+    .testimonials-section__title{
         font-size: 4rem;
     }
 
