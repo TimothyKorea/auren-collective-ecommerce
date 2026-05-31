@@ -107,3 +107,47 @@ bestSellersFilterBtn.forEach(btn => {
         bestSellerFilterLists.classList.remove('active');
     })
 })
+
+const subscribeBtn = document.querySelector('.js-subscribe-btn');
+const promotionalInput = document.querySelector('.js-promotional-input');
+const promotionalBtnSound = document.querySelector('.promotional-section__btn-sound');
+
+function updateButtonState(){
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let email = promotionalInput.value.trim();
+
+    if(!emailPattern.test(email)){
+        subscribeBtn.textContent = 'Subscribe';
+    }
+
+    else{
+        subscribeBtn.textContent = 'Ready to subscribe';
+    }
+}
+
+promotionalInput.addEventListener('focus', updateButtonState);
+promotionalInput.addEventListener('input', updateButtonState);
+
+subscribeBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    let email = promotionalInput.value.trim();
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailPattern.test(email)){
+        alert('Please enter an email address');
+        return;
+    }
+
+    else{
+        subscribeBtn.textContent = 'Subscribed to Zyren journal';
+        promotionalBtnSound.currentTime = 0;
+        promotionalBtnSound.play();
+        promotionalInput.value = "";
+    }
+
+    setTimeout(function(){
+        updateButtonState();
+    }, 2000);
+})
+

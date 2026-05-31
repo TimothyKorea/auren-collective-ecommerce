@@ -250,7 +250,8 @@
 .best-sellers__pieces-num,
 .best-sellers__filter-title,
 .product-card__seasonal-tag,
-.promotional-section__archive-text{
+.promotional-section__archive-text,
+.footer-section__est-info{
   text-transform:uppercase;
   position:relative;
   margin:0;
@@ -573,4 +574,52 @@
   font-size:0.78rem;
   color:#9ca3af;
   letter-spacing:0.02em;
+}
+
+.footer-section__logo-text{
+  color:#fff;
+  margin:0;
+  font-weight:700;
+  font-size:39.7vw;
+  line-height:0.8;
+  transform:translateY(12%);
+  white-space:nowrap;
+  letter-spacing:.013em;
+}
+
+.footer-section__text{
+  font-size:0.95rem;
+  font-weight:500;
+  max-width:45ch;
+  margin:0;
+  line-height:1.4;
+}
+
+.footer-section__nav-title,
+.footer-section__contact-title{
+  font-size:0.79rem;
+  font-weight:600;
+  letter-spacing: 0.1em;
+  color:#9ca3af;
+}
+
+.footer-section__nav-link,
+.footer-section__contact-link{
+  font-size:0.95rem;
+  font-weight:400;
+  transition:color 0.2s ease;
+}
+
+.footer-section__contact-text{
+  font-size:0.875rem;
+  line-height:1.6;
+  max-width: 32ch;
+  margin:0;
+}
+
+.footer-section__copyright,
+.footer-section__policy,
+.footer-section__terms{
+  font-size:0.8rem;
+  color:#9ca3af;
 }

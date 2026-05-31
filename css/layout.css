@@ -283,10 +283,13 @@ body.menu-open{
 .best-sellers,
 .editorial-section,
 .promotional-section,
-.testimonials-section{
+.testimonials-section,
+.footer-section__dflex,
+.footer-section__legal,
+.footer-section{
     max-width:1280px;
     margin:0 auto;
-    padding:3.8em 1.2em;
+    padding:5em 1.2em;
     border-bottom:1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -493,7 +496,14 @@ body.menu-open{
 }
 
 .promotional-section__dflex,
-.testimonials-section{
+.testimonials-section,
+.footer-section__content,
+.footer-section__dflex,
+.footer-section__nav-items,
+.footer-section__legal,
+.footer-section__navs,
+.footer-section__nav-content,
+.footer-section__contact{
     display:flex;
     flex-direction:column;
     gap:1.7rem;
@@ -502,7 +512,7 @@ body.menu-open{
 .promotional-section{
     border-bottom:none;
     background-color:rgb(24, 24, 27);
-    margin-top:4em;
+    margin-top:2.9em;
 }
 
 .promotional-section__content{
@@ -533,8 +543,83 @@ body.menu-open{
 
 .testimonials-section{
     gap:2.2rem;
+    border-bottom:none;
 }
 
 .testimonials-section__content{
     gap:1.1rem;
+}
+
+.footer-section{
+    padding:0;
+    border:none;
+}
+
+.footer-section__logo-wrapper{
+    overflow:hidden;
+    background-color:rgb(24, 24, 27);
+    width:100%;
+    padding-top:15px;
+}
+
+.footer-section__dflex{
+    padding-top:2em;
+    padding-bottom:4em;
+    gap:1.9rem;
+}
+
+.footer-section__navs{
+    gap:2rem;
+}
+
+.footer-section__nav-dflex{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    row-gap:2.5rem;
+}
+
+.footer-section__nav-content,
+.footer-section__contact{
+    gap:.9rem;
+}
+
+.footer-section__content{
+    gap:.83rem;
+}
+
+.footer-section__social-links{
+    display:flex;
+    gap:1rem;
+}
+
+.footer-section__contact-link{
+    border-bottom:0.5px solid rgba(0, 0, 0, 0.1);
+    padding-bottom:.25em;
+}
+
+.footer-section__nav-title,
+.footer-section__contact-title,
+.footer-section__copyright,
+.footer-section__policy,
+.footer-section__terms{
+    margin:0;
+}
+
+.footer-section__nav-items{
+    gap:1rem;
+}
+
+.footer-section__legal{
+    padding-top:1.5em;
+    padding-bottom:2.5em;
+}
+
+.footer-section__legal{
+    gap:.79rem;
+}
+
+.footer-section__legal-dflex{
+    display:flex;
+    align-items:center;
+    gap:1.8rem;
 }
